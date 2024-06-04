@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.relative {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            bottom: 20px;
+        }
+
+        div.absolute {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            position: absolute;
+            top: 90px;
+            left: 300px;
+        }
+
+        div.conteiner {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        div.absolute1 {
+            width: 20px;
+            height: 20px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 30px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Positions</h1>
+    <div class="relative">
+        <p>relative</p>
+    </div>
+
+    <div class="absolute">
+        absolute
+    </div>
+
+    <div class="conteiner">
+        <div class="absolute1">
+            absolute
+        </div>
+    </div>
+</body>
+</html>

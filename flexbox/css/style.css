@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* Testando o flex-direction */
+div#flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Testando o flex-wrap */
+div#wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.box {
+    width: 33%;
+    height: 50px;
+    border: 1px solid blue;
+}
+
+/* Testando justify-content */
+    
+    /* Consigo alinhar todos os elementos filhos de uma única vez */
+div#center {
+    display: flex;
+    justify-content: center; 
+}
+
+div#space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+div#space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#end {
+    display: flex;
+    justify-content: end;
+}
+
+div.caixa {
+    width: 100px;
+    height: 50px;
+    border: 1px solid blue;
+}
+
+/* Testando align-items */
+    /* Alinhamento vertical */
+div.conteiner {
+    height: 300px;
+    display: flex;
+    border: 1px solid red;
+}
+
+div#vcenter {
+    align-items: center;
+}
+
+div#flexend {
+    align-items: flex-end;
+}
+
+div#stretch {
+    align-items: stretch;
+}
+
+div#stretch div.caixa {
+    height: auto; 
+    /* Os elementos filhos não podem ter altura definida para o stretch funcionar */
+}

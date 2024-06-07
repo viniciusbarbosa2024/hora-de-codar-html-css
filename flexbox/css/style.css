@@ -71,3 +71,58 @@ div#stretch div.caixa {
     height: auto; 
     /* Os elementos filhos não podem ter altura definida para o stretch funcionar */
 }
+
+/* Testando gap */
+div#gap {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+/* Testando order */
+#order {
+    display: flex;
+    flex-direction: column;
+}
+
+#one {
+    order: 1;
+}
+
+#two {
+    order: 2;
+}
+
+#tree {
+    order: 3;
+}
+
+/* Testando grow */
+
+#grow {
+    display: flex;
+}
+
+#grow .caixa { 
+    flex-grow: 1;
+}
+
+#grow #big-box {
+    flex-grow: 2;
+} 
+
+    /* 
+    Se eu escrevo dessa forma não funciona
+
+    #grow .caixa {
+        flex-grow: 1;
+    }
+
+    #big-box {
+        flex-grow: 2;
+    } 
+
+    Isso ocorre pq apesar do id se sobrepor ao class,o fato de eu ter especificado o lugar da caixa com class(#grow . caixa) e não ter especificado com id(#big-box) fez com que o class ficasse sobreposto ao id
+
+    */

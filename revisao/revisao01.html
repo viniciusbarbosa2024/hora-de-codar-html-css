@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative {
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            position: relative;
+            left: 80px;
+            bottom: 3px;
+        }
+
+        .absolute {
+            width: 250px;
+            height: 250px;
+            background-color: bisque; 
+            position: absolute;
+            top: 100px;
+            left: 600px;
+        }
+
+        .fixed {
+            width: 250px;
+            height: 250px;
+            background-color: steelblue;
+            position: fixed;
+            top: 150px;
+            left: 650px;
+            z-index: -1;
+        }
+
+        .sticky {
+            width: 250px;
+            height: 250px;
+            background-color: seagreen; 
+            position: sticky;
+            top: 2px;
+            left: 50px;
+            z-index: -1;
+        }
+
+        .conteiner {
+            width: 100%;
+            background-color: darkgrey;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .box {
+            flex-basis: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Positions</h1>
+    <h2>Relative</h2>
+    <p>Movimento(por top,left,...) ocorre em relação a posição inicial(que seria com position static)</p>
+    <div class="relative">
+        relative
+    </div>
+
+    <h2>Absolute</h2>
+    <p>Movimento(por top,left...) ocorre em relação ao canto superior esquerdo do documento </p>
+    <div class="absolute">
+        absolute
+    </div>
+
+    <h2>Fixed</h2>
+    <p>É uma espécie de absolute com a diferença que a distância do canto superior esquerdo(definida por top,left...) se mantém fixa independente da rolagem</p>
+    <div class="fixed">
+        Fixed
+    </div>
+
+    <h2>Sticky</h2>
+    <p>É uma mistura entre relative e fixed</p>
+    <div class="sticky">
+        Sticky
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, praesentium? Architecto sequi laborum cum tempora modi similique veritatis inventore! Animi dolor nam error eligendi accusantium architecto sit eius sunt. Cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, iure eveniet necessitatibus nemo ex quaerat numquam aut. Deleniti temporibus velit omnis sunt expedita, quisquam eveniet, numquam officia impedit inventore minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente delectus debitis aut ipsam aperiam eum! Deleniti aliquid quae odio reiciendis iure, velit doloribus neque earum, exercitationem eos pariatur tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tempora vel adipisci, minima, aliquam porro maxime facilis accusamus voluptates sit quis quo amet, a quas unde perferendis optio enim pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus omnis, ipsa assumenda accusamus nemo, animi voluptatem ducimus libero voluptatibus molestias id odit totam facere quisquam ut at voluptates vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deserunt eveniet maxime quod nulla voluptates molestias facere voluptate, itaque dolorem nemo, optio reprehenderit nesciunt deleniti totam rem. Totam, delectus magnam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae repellendus eaque rem deserunt, nobis fuga facilis, incidunt, consequatur accusantium voluptatum possimus veniam nesciunt perspiciatis excepturi ducimus tenetur cum molestias. Voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, praesentium? Architecto sequi laborum cum tempora modi similique veritatis inventore! Animi dolor nam error eligendi accusantium architecto sit eius sunt. Cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, iure eveniet necessitatibus nemo ex quaerat numquam aut. Deleniti temporibus velit omnis sunt expedita, quisquam eveniet, numquam officia impedit inventore minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente delectus debitis aut ipsam aperiam eum! Deleniti aliquid quae odio reiciendis iure, velit doloribus neque earum, exercitationem eos pariatur tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tempora vel adipisci, minima, aliquam porro maxime facilis accusamus voluptates sit quis quo amet, a quas unde perferendis optio enim pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus omnis, ipsa assumenda accusamus nemo, animi voluptatem ducimus libero voluptatibus molestias id odit totam facere quisquam ut at voluptates vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deserunt eveniet maxime quod nulla voluptates molestias facere voluptate, itaque dolorem nemo, optio reprehenderit nesciunt deleniti totam rem. Totam, delectus magnam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae repellendus eaque rem deserunt, nobis fuga facilis, incidunt, consequatur accusantium voluptatum possimus veniam nesciunt perspiciatis excepturi ducimus tenetur cum molestias. Voluptates.</p>
+
+    <h1>Flexbox</h1>
+    <div class="conteiner">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

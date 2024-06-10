@@ -126,3 +126,54 @@ div#gap {
     Isso ocorre pq apesar do id se sobrepor ao class,o fato de eu ter especificado o lugar da caixa com class(#grow . caixa) e não ter especificado com id(#big-box) fez com que o class ficasse sobreposto ao id
 
     */
+
+/*Testando flex-basis*/
+
+#basis {
+    display: flex;
+}
+
+#basis .caixa {
+    flex-basis: 80px;
+}
+
+/* Testando flex-shrink */
+
+#shrink {
+    display: flex;
+}
+
+#shrink .caixa {
+    
+    flex-basis: 300px;
+}
+
+#shrink #small-box {
+    flex-shrink: 2;
+}
+
+/* Testando a flex shorthand */
+#shorthand {
+    display: flex;
+}
+
+#shorthand .caixa {
+    flex: 1 1 300px;
+}
+
+#shorthand #diferente {
+    flex: 3 2 300px;
+}
+
+/* Testando autoalinhamento */
+
+#auto-alinhamento {
+    height: 300px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: end;
+}
+
+#auto-alinhamento #diferente {
+    align-self: center;
+}

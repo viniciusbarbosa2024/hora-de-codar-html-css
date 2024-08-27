@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#conteiner {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 30% 30% 20% auto;
+    grid-template-rows: 40% 30% 10% 10%;
+    gap: 10px;
+    
+    background-color: black;
+}
+
+.box {
+    border: 1px solid blue;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 650px;
+            height: 500px;
+
+            background-color: aquamarine;
+            position: relative;
+        }
+        
+        .line {
+            border: 1px solid black;
+        }
+
+        #line1 {
+            position: absolute;
+            top: 80%;
+            left: 20px;
+
+            width: 500px;
+        }
+
+        #line2 {
+            position: absolute;
+            top: 80%;
+            left: 20px;
+            
+            width: 288.6751px;
+
+            transform: rotate(-30deg);
+            transform-origin: left;
+        }
+
+        #line3 {
+            position: absolute;
+            top: 80%;
+            left: 520px;
+
+            width: 288.6751px;
+
+            transform: rotate(-150deg);
+            transform-origin: left;
+        }
+
+        #scaleTest {
+            width: 100px;
+            height: 100px;
+
+            background-color: blue;
+
+            transform: scale(2,1);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+    </div>
+
+    <div id="scaleTest">
+        
+    </div>
+</body>
+</html>
